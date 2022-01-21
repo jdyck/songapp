@@ -1,0 +1,19 @@
+columnSuffix: gxfustfw
+contentColumnType: text
+fieldGroup: 511a7541-316c-4d8f-b467-1b124d64206b # Common
+handle: spotifyId
+instructions: ''
+name: 'Spotify ID'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

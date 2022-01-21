@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: recordings
+name: Recordings
+propagationMethod: all
+siteSettings:
+  18990027-5eed-431d-bdce-ee7f4879399c: # Songapp
+    enabledByDefault: true
+    hasUrls: true
+    template: recordings/_entry
+    uriFormat: 'recordings/{slug}'
+type: channel

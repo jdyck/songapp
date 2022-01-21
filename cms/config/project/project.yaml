@@ -1,13 +1,25 @@
-dateModified: 1642735660
+dateModified: 1642782583
 email:
   fromEmail: johann.dyck@gmail.com
   fromName: Songapp
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    01c634f5-57b5-4e7d-8f57-1364c5fb8288: Songs # Songs
+    2c3a68b7-a256-4bf6-a55e-227a5421911e: Artists # Artists
+    8e4f8987-1536-4605-a51e-3d2ed904d80a: 'Spotify ID' # Spotify ID
+    67d17310-51f6-4aa9-9873-69261366ea1b: Default # Default
+    167f4700-f303-4692-9ea1-cb9b75128e2c: Default # Default
     269cc419-d2b3-48fd-aed9-7d8de00006a3: Songapp # Songapp
     511a7541-316c-4d8f-b467-1b124d64206b: Common # Common
+    8148ee48-9d4f-43b2-9951-dba6ccdbcd5e: Album # Album
+    9184c8a3-9ebf-45ad-8287-47c9c41558f8: Albums # Albums
+    66058b6b-e2c2-48eb-9c71-49c3c992b0e6: Artist # Artist
+    417610e7-ed31-49b9-98de-de63696b02da: Default # Default
     18990027-5eed-431d-bdce-ee7f4879399c: Songapp # Songapp
+    b01803e4-9b37-4315-99d9-559064d1ccfc: Recordings # Recordings
+    caa47f5c-3910-43d2-9f5a-31f104043349: Song # Song
+    fa81c123-05c9-452a-a4d7-7ecd785dc1d4: Default # Default
 system:
   edition: solo
   live: true
