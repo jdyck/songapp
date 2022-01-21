@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>{% block title %}Song App{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="stylesheet" href="/dist/css/style.css">
+</head>
+<body>
+{% include '_partials/header.twig' %}
+<div class="content">
+    {% block content %}
+        No Content
+    {% endblock content %}
+</div>
+{% include '_partials/footer.twig' %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: artists
+name: Artists
+propagationMethod: all
+siteSettings:
+  18990027-5eed-431d-bdce-ee7f4879399c: # Songapp
+    enabledByDefault: true
+    hasUrls: true
+    template: artists/_entry
+    uriFormat: 'artists/{slug}'
+type: channel

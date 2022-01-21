@@ -1,0 +1,4 @@
+- https://developer.spotify.com/dashboard/applications
+- https://rapidapi.com/theaudiodb/api/theaudiodb
+- https://rapidapi.com/PlanetTeamSpeak/api/mourits-lyrics
+- 

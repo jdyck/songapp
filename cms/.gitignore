@@ -3,3 +3,4 @@
 /vendor
 .DS_Store
 /config/license.key
+/buildchain/node_modules/
