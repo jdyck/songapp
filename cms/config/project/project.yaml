@@ -1,0 +1,22 @@
+dateModified: 1642735660
+email:
+  fromEmail: johann.dyck@gmail.com
+  fromName: Songapp
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    269cc419-d2b3-48fd-aed9-7d8de00006a3: Songapp # Songapp
+    511a7541-316c-4d8f-b467-1b124d64206b: Common # Common
+    18990027-5eed-431d-bdce-ee7f4879399c: Songapp # Songapp
+system:
+  edition: solo
+  live: true
+  name: Songapp
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
