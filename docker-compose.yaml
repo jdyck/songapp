@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+
+  web:
+    build:
+      context: ./docker-config/web
+      dockerfile: ./Dockerfile
+    depends_on:
+      - php
+    ports:
+      - 80:80
+    volumes:
+      - cpresources:/cms/web/cpresources:delegated
+      - ./docker-config/web/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./cms:/cms:cached
+    networks:
+      - project
+
+  mysql:
+    hostname: mysql
+    build:
+      context: ./docker-config/mysql
+      dockerfile: ./Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_DATABASE: 'database'
+    volumes:
+      - mysql:/var/lib/mysql:delegated
+    ports:
+      - 3306:3306
+    networks:
+      - project
+
+  php:
+    build:
+      context: ./docker-config/php
+      dockerfile: ./Dockerfile
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_DATABASE: 'database'
+    volumes:
+      - cpresources:/cms/web/cpresources:delegated
+      - storage:/cms/storage:delegated
+      - ./docker-config/php/craft-cms-xdebug.ini:/usr/local/etc/php/conf.d/craft-cms-xdebug.ini
+      - ./cms:/cms:cached
+      # Specific directories that need to be bind-mounted
+      - ./cms/storage/logs:/cms/storage/logs:delegated
+      - ./cms/storage/runtime/compiled_templates:/cms/storage/runtime/compiled_templates:delegated
+      - ./cms/storage/runtime/compiled_classes:/cms/storage/runtime/compiled_classes:delegated
+      - ./cms/vendor:/cms/vendor:delegated
+    networks:
+      - project
+
+networks:
+  project:
+
+volumes:
+  mysql:
+  cpresources:
+  storage:
